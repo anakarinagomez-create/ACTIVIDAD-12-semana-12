@@ -1,0 +1,9 @@
+Durante este curso comprendí que la tecnología es un puente indispensable
+para democratizar la participación ciudadana y simplificar procesos que
+antes parecían complejos. Herramientas como el sistema de "Petición en 3 Clics"
+demuestran que el diseño de software con enfoque social puede reducir las
+barreras de acceso, permitiendo que cualquier persona exprese sus propuestas.
+Asimismo, el uso de automatizaciones sencillas a través de n8n y canales como
+Telegram potencia la organización comunitaria, manteniendo a los vecinos
+informados al instante. Por último, aprendí que la innovación debe ir de la mano
+de un compromiso ético y riguroso con la seguridad y la privacidad de los datos.

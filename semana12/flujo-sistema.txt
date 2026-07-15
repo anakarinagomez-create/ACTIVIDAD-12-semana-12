@@ -1,0 +1,14 @@
+Paso 1: Creación de la Causa (Primer Clic)
+El ciudadano ingresa a la plataforma y, con un solo clic, inicia la creación de una causa completando un formulario muy sencillo con el título, la descripción de la problemática y la solución propuesta.
+
+Paso 2: Registro en el Sistema
+Al guardar la causa, esta se registra de forma segura y automática en la base de datos del sistema, asignándole un identificador único y un estado de "Activa".
+
+Paso 3: Difusión y Apoyo Ciudadano (Segundo Clic)
+La causa se publica en el listado general de la plataforma. Otros ciudadanos interesados en la misma problemática ingresan y, con un segundo clic (botón "Apoyar Causa"), suman su respaldo de manera inmediata.
+
+Paso 4: Conteo y Consolidación de Apoyos
+El sistema registra y cuenta cada uno de los apoyos recibidos en tiempo real. Cuando la causa alcanza un umbral mínimo de firmas o apoyos configurado, activa automáticamente la fase de cierre de la petición.
+
+Paso 5: Generación y Envío del Documento (Tercer Clic)
+El creador de la causa (o el sistema de forma automatizada) realiza el tercer clic para "Generar Petición". El sistema recopila los datos de la causa y la lista de ciudadanos que la apoyaron, y genera automáticamente un documento PDF formal listo para ser descargado o enviado directamente a las autoridades competentes.

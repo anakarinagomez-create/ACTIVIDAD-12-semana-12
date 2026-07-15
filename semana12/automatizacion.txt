@@ -1,0 +1,46 @@
+Esta automatización permite notificar de manera instantánea a un canal de 
+Telegram de la comunidad o del equipo moderador cada vez que se registra 
+una nueva iniciativa en la plataforma.
+
+1. HERRAMIENTAS UTILIZADAS
+
+  * webhook de Origen / Base de Datos: Disparador del sistema web.
+  * n8n: Plataforma de integración y flujo de trabajo que actúa como puente.
+  * Telegram: Canal de mensajería para la recepción de alertas en tiempo real.
+
+
+2. EVENTO QUE ACTIVA LA AUTOMATIZACIÓN (Trigger)
+
+  * Evento: "Nueva causa registrada con éxito en la base de datos".
+  * Funcionamiento: En cuanto la entidad 'Causa' recibe un nuevo registro, 
+    el backend de la plataforma o un nodo de escucha de n8n (Database Trigger) 
+    captura la información y pone en marcha el flujo de trabajo.
+
+
+3. MENSAJE QUE SE ENVÍA (Output en Telegram)
+
+El bot de Telegram envía un mensaje público y dinámico con la estructura:
+
+ *¡Nueva Causa Creada en la Plataforma!* 
+
+ *Título:* [Título de la Causa]
+ *Descripción:* [Breve extracto o resumen de la problemática]
+*Fecha de Creación:* [DD/MM/AAAA]
+
+ _¡Ingresa a la plataforma para leer la propuesta completa y sumar tu apoyo con un solo clic!_
+
+
+4. INFORMACIÓN QUE NO DEBE ENVIARSE POR SEGURIDAD (Restricciones de Privacidad)
+
+Para cumplir con las normativas de protección de datos personales (como la 
+Ley de Habeas Data en Colombia) y mitigar riesgos de ingeniería social o acoso, 
+QUEDA ESTRICTAMENTE PROHIBIDO enviar a través de este canal de Telegram:
+
+  * Datos de identificación personal (cédulas, pasaportes o números de documento).
+  * Datos de contacto directo del creador de la causa (números de teléfono, 
+    correos electrónicos o direcciones residenciales exactas).
+  * Comentarios y opiniones sensibles que no hayan pasado por un filtro de 
+    moderación previo.
+  * Datos de los firmantes o ciudadanos que apoyan la causa (sus nombres e 
+    identificaciones se mantienen privados en la base de datos y solo se consolidan 
+    en el PDF final encriptado para la entidad gubernamental).

@@ -1,0 +1,32 @@
+Entidad: causa
+Representa la petición, iniciativa o problemática colectiva que un 
+ciudadano (el creador) publica en la plataforma con el fin de reunir 
+el respaldo de la comunidad.
+
+Atributos:
+  * id (Llave Primaria): Identificador único de tipo entero o UUID para 
+    cada causa registrada. Evita colisiones en la base de datos.
+  * titulo (Texto): Nombre o encabezado descriptivo y conciso de la 
+    causa (ej. "Ciclorruta para la Calle 30").
+  * descripcion (Texto largo): Detalle exhaustivo de la problemática, 
+    los argumentos y la solución que se propone a las autoridades.
+  * fecha (Fecha / Timestamp): Día y hora exacta en la que se creó y 
+    publicó la causa en el sistema.
+
+    Entidad: apoyo
+    Representa cada una de las firmas individuales o respaldos digitales que 
+los ciudadanos otorgan a una causa específica dentro de la plataforma.
+
+Atributos:
+  * id (Llave Primaria): Identificador único para cada registro de apoyo.
+  * causa_id (Llave Foránea): Relación directa con el 'id' de la tabla 
+    Causa. Permite saber exactamente a qué causa pertenece este voto.
+  * nombre (Texto): Nombre completo o identificación del ciudadano que 
+    está respaldando la causa.
+  * fecha (Fecha / Timestamp): Momento exacto en el que el ciudadano 
+    hizo clic para registrar su apoyo.
+
+    La relación entre "Causa" y "Apoyo" es de Uno a Muchos (1:N):
+  * Una Causa puede recibir muchos Apoyos.
+  * Un Apoyo pertenece única y exclusivamente a una Causa a través del 
+    campo de enlace 'causa_id'.
